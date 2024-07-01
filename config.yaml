@@ -1,0 +1,6 @@
+path: C:\Users\User\Desktop\END of YEAR\Collision prediction\data
+train: train/images
+val: valid/images
+
+nc: 6
+names: ['car','threewheel','bus','truck','motorbike','van']
