@@ -3,6 +3,7 @@ import cv2
 import math
 import os
 from utils.deepsort_tracker import ObjectTracker
+from utils.distance_estimator import DistanceEstimation
 
 class ObjectDetection:
     def __init__(self, capture):
@@ -11,7 +12,7 @@ class ObjectDetection:
         self.CLASS_NAMES_DICT = self.model.model.names
 
     def load_model(self):
-        model = YOLO('./runs/detect/train4/weights/last.pt')
+        model = YOLO('./runs/detect/train5/weights/best.pt')
         model.fuse()
         return model
 
